@@ -1,0 +1,306 @@
+html,
+body{
+    height:100%;
+}
+
+*{
+  list-style: none;
+}
+
+body{
+    font-family: Verdana, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    background-image: url("../images/overlay.png"), -moz-linear-gradient(0deg, rgba(118, 224, 200, 0.5) 5%, rgba(0, 158, 235, 0.35)), url("../images/bg.jpg");
+    background-image: url("../images/overlay.png"), -webkit-linear-gradient(0deg, rgba(118, 224, 200, 0.5) 5%, rgba(0, 158, 235, 0.35)), url("../images/bg.jpg");
+    background-image: url("../images/overlay.png"), -ms-linear-gradient(0deg, rgba(118, 224, 200, 0.5) 5%, rgba(0, 158, 235, 0.35)), url("../images/bg.jpg");
+    background-image: url("../images/overlay.png"), linear-gradient(0deg, rgba(118, 224, 200, 0.5) 5%, rgba(0, 158, 235, 0.35)), url("../images/bg.jpg");
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, cover, cover;
+    background-position: top left, center center, bottom center;
+    background-attachment: fixed, fixed, fixed;
+}
+
+.version-label {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.middle-box{
+    max-width: 400px;
+    z-index: 100;
+    margin: 0 auto;
+    /* padding-top: 40px; */
+    margin-bottom: 100px;
+}
+
+.login{
+    padding: 4.5em 3em 3em 3em ;
+    background: #ffffff;
+    border-radius: 4px;
+    cursor: default;
+    opacity: 0.95;
+    text-align: center;
+    -moz-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -moz-transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+    -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+    -ms-transition: opacity 1s ease, -ms-transform 1s ease;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.callingModal .modal-dialog{
+  width: 200px;
+}
+
+.calledModal .modal-dialog{
+  width: 250px;
+}
+
+.master{
+  height: 100%;
+  background-color: #F1F2F1;
+  border-right: 1px solid #E6E6E6;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.detail{
+  height: 100%;
+  background-color: #F2F2F2;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.nav{
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.media-header {
+  justify-content: space-between;
+}
+
+.detail .nav{
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.md-content{
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.chat-history {
+  overflow-y: auto;
+}
+
+.chat-history>li{
+  width: 100%;
+  height: 100px;
+  position: relative;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.chat-history>li.selected{
+  background-color: #D8DADA;
+  border-bottom: 0;
+}
+
+.chat-history>li .title{
+  font-size: 16px;
+  padding: 10% 20px 0px 20px;
+}
+
+.chat-history>li .desc{
+  font-size: 13px;
+  padding: 0px 20px 10px 20px;
+}
+
+.chat-messages{
+  margin: 0;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+  -moz-transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+  -ms-transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+  -o-transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+  transition: all 200ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+  height: 60%;
+}
+
+.chat-messages .message{
+  padding:0 0 30px 58px;
+  clear:both;
+  margin-bottom:45px;
+}
+.chat-messages .message.right{
+    padding: 0 58px 30px 0;
+    margin-right: -19px;
+    margin-left: 19px;
+}
+.chat-messages .message img{
+    float: left;
+    margin-left: -38px;
+    border-radius: 50%;
+    width: 30px;
+    margin-top: 12px;
+}
+.chat-messages .message.right img{
+  float: right;   
+  margin-left: 0;
+  margin-right: -38px; 
+}
+.message .bubble{   
+  background:#fff;
+  font-size:13px;
+  padding:12px 13px;
+  border-radius:5px 5px 5px 0px;
+  /* color:#8495a3; */
+  position:relative;
+  float:left;
+  margin-left: 7px;
+  min-width: 52px;
+  max-width: 50%;
+  word-wrap: break-word;
+}
+.chat-messages .message.right .bubble{
+  background: #b2e281;
+  float:right;
+  border-radius:5px 5px 0px 5px ;
+  margin-right: 7px;
+}
+.bubble .corner{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid white;
+  left: -6px;
+  bottom: 10px;
+}
+.chat-messages .message.right .corner{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #b2e281;
+  border-right: initial;
+  left: initial;
+  right: -6px;
+  bottom: 10px;
+}
+.bubble span{
+    color: #aab8c2;
+    font-size: 11px;
+    position: absolute;
+    white-space: nowrap;
+    right: 0;
+    bottom: -22px;
+}
+
+.chat-view .text-field{
+  height: 40%;
+}
+
+.chat-view .text-field textarea{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border: 0;
+  vertical-align: middle;
+  resize: none;
+  -webkit-box-shadow: 0 0 0;
+  -moz-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+  outline: none;
+  background-color: #F2F2F2;
+  border-top: 1px solid #E6E6E6;
+  border-bottom-right-radius: 20px;
+}
+
+.modal-dialog .modal-content .modal-footer{
+  padding: 8px;
+}
+
+#media-container{
+  position:relative;
+  height:80%;
+  width: 100%;
+  box-shadow: 4px 6px 17px 1px #777;
+}
+
+.side-stream {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  border: 1px solid white;
+  z-index: 1;
+}
+
+.toolbar{
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+p {
+    margin: 0 0 10px;
+    font-size: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 16px;
+}
+h4 {
+  font-size: 14px;
+}
+h5 {
+  font-size: 12px;
+}
+h6 {
+  font-size: 10px;
+}
+h3,
+h4,
+h5 {
+  margin-top: 5px;
+  font-weight: 600;
+}

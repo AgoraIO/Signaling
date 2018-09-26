@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Agora Signaling Tutorial</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center" id="parent-wrapper" style="align-items: center;height: 100%">
+        <div id="media-container" class="row">
+            <div class="col-md-3 master">
+                <div class="row nav media-header">
+                    <div id="localAccount"></div>
+                    <div id="accountBtnGroup">
+                        <button type="button" class="btn btn-primary bmd-btn-icon new-conversation-btn">
+                            <i class="material-icons">add</i>
+                        </button>
+                        <button type="button" class="btn btn-primary bmd-btn-icon logout-btn">
+                            <i class="material-icons">exit_to_app</i>
+                        </button>
+                    </div>
+                    
+                </div>
+                <ul class="md-content chat-history">
+                </ul>
+            </div>
+            <div class="col-md-9 detail">
+                <div class="row nav">
+                </div>
+                <div class="md-content chat-view">
+                    <ul class="chat-messages">
+                    </ul>
+                    <div class="text-field">
+                        <textarea name="message-to-send" id="message-to-send" placeholder="Input some messages..." rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade conversation-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Start a conversation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="form-group">
+                            <input type="text" class="form-control conversation-target-field" placeholder="Input someone's account">
+                            <div class="invalid-feedback">
+                                Invalid Name!
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label" style="line-height:initial">
+                                <input class="form-check-input" type="radio" name="type" value="instant" checked>P2P Chatting
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label" style="line-height:initial">
+                                <input class="form-check-input" type="radio" name="type" value="channel">Channel Chatting
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group" role="group">
+                        <button type="button" style="width: 6em" class="btn btn-default cancelBtn btn-raised ml-1">
+                            Cancel
+                        </button>
+                        <button type="button" style="width: 6em" class="btn btn-primary confirmBtn btn-raised ml-1">
+                            Confirm
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/AgoraSig.js"></script>
+    <script src="assets/agora.config.js"></script>
+</body>
+
+</html>

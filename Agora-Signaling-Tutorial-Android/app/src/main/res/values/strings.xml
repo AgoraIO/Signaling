@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Agora Signaling Tutorial</string>
+
+    <string name="single_input">Single line input</string>
+    <string name="str_msg_single">Point to point message</string>
+    <string name="str_msg_channel">Channel meassage</string>
+    <string name="str_join_channe_failed">Join channel failed</string>
+    <string name="str_online">(Online)</string>
+    <string name="str_not_online">(Not online)</string>
+    <string name="str_msg_not_empty">The account is empty</string>
+    <string name="str_msg_not_128">The accout is no more than 128</string>
+    <string name="str_msg_not_contains_space">The accout contains space</string>
+    <string name="str_msg_cannot_yourself">The accout cannot be yourself</string>
+    <string name="str_msg_net_bad">Login Failed for the network is not available</string>
+    <string name="str_login">Login</string>
+    <string name="str_chat">Chat</string>
+    <string name="str_join">Join</string>
+    <string name="str_send">Send</string>
+    <string name="str_friend">Friends name</string>
+    <string name="str_channel">Channel name</string>
+    <string name="str_account">Account</string>
+
+</resources>

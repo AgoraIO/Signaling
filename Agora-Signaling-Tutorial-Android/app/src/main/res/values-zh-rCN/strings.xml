@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+    <string name="single_input">单行输入</string>
+    <string name="str_msg_single">点对点消息</string>
+    <string name="str_msg_channel">频道消息</string>
+    <string name="str_join_channe_failed">加入频道失败</string>
+    <string name="str_online">(在线)</string>
+    <string name="str_not_online">(不在线)</string>
+    <string name="str_msg_not_empty">账号为空</string>
+    <string name="str_msg_not_128">账号长度不超过128</string>
+    <string name="str_msg_not_contains_space">账号不能包含空格</string>
+    <string name="str_msg_cannot_yourself">不能呼叫自己</string>
+    <string name="str_msg_net_bad">登录失败，网络不可用</string>
+    <string name="str_login">登录</string>
+    <string name="str_chat">聊天</string>
+    <string name="str_join">加入</string>
+    <string name="str_send">发送</string>
+    <string name="str_friend">朋友名</string>
+    <string name="str_channel">频道名</string>
+    <string name="str_account">账号</string>
+
+</resources>

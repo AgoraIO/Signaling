@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="Agora-Signaling-Tutorial" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Agora-Signaling-Tutorial" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="Quit Agora-Signaling-Tutorial" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Agora_Signaling_Tutorial" customModuleProvider="target"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                    <window key="window" title="Agora Signaling Tutorial" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="960" height="540"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="-323"/>
+        </scene>
+        <!--mainToChat-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController title="mainToChat" id="XfG-lQ-9wD" customClass="MainViewController" customModule="Agora_Signaling_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="960" height="540"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dcU-bU-4Dn">
+                                <rect key="frame" x="397" y="471" width="167" height="19"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Agora Signaling Tutorial" id="Urx-BQ-NV9">
+                                    <font key="font" metaFont="system" size="15"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="p3D-43-NII">
+                                <rect key="frame" x="380" y="419" width="200" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0dr-1S-zDa"/>
+                                    <constraint firstAttribute="height" constant="22" id="ZUf-3A-GVQ"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="mzw-tP-A31">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="etf-oa-VwF">
+                                <rect key="frame" x="443" y="332" width="74" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uaI-rX-5Op"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Login" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ycv-gw-pzN">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="loginBtnClick:" target="XfG-lQ-9wD" id="EEy-Bp-WHt"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="juS-5m-bUX">
+                                <rect key="frame" x="308" y="422" width="54" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Account" id="Nyl-kg-P8C">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gvI-ez-E2w">
+                                <rect key="frame" x="882" y="15" width="65" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version" id="grH-IT-aAE">
+                                    <font key="font" metaFont="system" size="18"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="p3D-43-NII" firstAttribute="top" secondItem="dcU-bU-4Dn" secondAttribute="bottom" constant="30" id="6d8-fj-RBI"/>
+                            <constraint firstItem="dcU-bU-4Dn" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="50" id="Bw0-lp-vLa"/>
+                            <constraint firstItem="juS-5m-bUX" firstAttribute="centerY" secondItem="p3D-43-NII" secondAttribute="centerY" id="Hdw-OH-twH"/>
+                            <constraint firstAttribute="trailing" secondItem="gvI-ez-E2w" secondAttribute="trailing" constant="15" id="ME3-hU-zZc"/>
+                            <constraint firstAttribute="bottom" secondItem="gvI-ez-E2w" secondAttribute="bottom" constant="15" id="PRX-Rn-6lT"/>
+                            <constraint firstItem="p3D-43-NII" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="juS-5m-bUX" secondAttribute="trailing" constant="8" symbolic="YES" id="TBH-ny-P26"/>
+                            <constraint firstItem="dcU-bU-4Dn" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="cE7-m1-0Sp"/>
+                            <constraint firstItem="p3D-43-NII" firstAttribute="leading" secondItem="juS-5m-bUX" secondAttribute="trailing" constant="20" id="cPt-nw-Nqj"/>
+                            <constraint firstItem="etf-oa-VwF" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="fdU-AC-OuJ"/>
+                            <constraint firstItem="p3D-43-NII" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="fgF-hT-jYY"/>
+                            <constraint firstItem="etf-oa-VwF" firstAttribute="top" secondItem="p3D-43-NII" secondAttribute="bottom" constant="50" id="pqk-KP-AKq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accountTextField" destination="p3D-43-NII" id="Szg-s4-6KF"/>
+                        <outlet property="versionLabel" destination="gvI-ez-E2w" id="n31-Hw-rg2"/>
+                        <segue destination="Hy0-vw-hcF" kind="custom" identifier="mainToChat" customClass="CustomSegue" customModule="Agora_Signaling_Tutorial" id="YOC-r2-Nz6"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="655"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="sdE-lC-vCE">
+            <objects>
+                <viewController id="Hy0-vw-hcF" customClass="ChatViewController" customModule="Agora_Signaling_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="27M-nh-G74">
+                        <rect key="frame" x="0.0" y="0.0" width="960" height="540"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="OwD-AP-jeS" customClass="TintView" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="470" width="300" height="70"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ovl-vl-Szk">
+                                        <rect key="frame" x="8" y="26" width="127" height="19"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Current account:" id="zN8-mm-Gmb">
+                                            <font key="font" metaFont="system" size="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6we-99-02j">
+                                        <rect key="frame" x="250" y="20" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="QZj-7z-tQN"/>
+                                            <constraint firstAttribute="width" constant="30" id="qUQ-2B-lft"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="out" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="76l-RG-A4v">
+                                            <behavior key="behavior" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="backAction:" target="Hy0-vw-hcF" id="dQq-mf-jQa"/>
+                                        </connections>
+                                    </button>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="n7T-yf-x2N">
+                                        <rect key="frame" x="136" y="26" width="44" height="19"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="5SX-Uv-n5T">
+                                            <font key="font" metaFont="system" size="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="AS3-tb-fRS"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ovl-vl-Szk" secondAttribute="trailing" constant="20" symbolic="YES" id="CQg-H7-o3a"/>
+                                    <constraint firstItem="n7T-yf-x2N" firstAttribute="leading" secondItem="Ovl-vl-Szk" secondAttribute="trailing" constant="5" id="IEA-f2-uAG"/>
+                                    <constraint firstItem="Ovl-vl-Szk" firstAttribute="centerY" secondItem="OwD-AP-jeS" secondAttribute="centerY" id="KG1-Bg-Y9D"/>
+                                    <constraint firstAttribute="trailing" secondItem="6we-99-02j" secondAttribute="trailing" constant="20" id="Li8-vS-YYY"/>
+                                    <constraint firstItem="n7T-yf-x2N" firstAttribute="centerY" secondItem="Ovl-vl-Szk" secondAttribute="centerY" id="MQJ-bH-wfi"/>
+                                    <constraint firstItem="6we-99-02j" firstAttribute="centerY" secondItem="OwD-AP-jeS" secondAttribute="centerY" id="Med-KZ-eub"/>
+                                    <constraint firstAttribute="width" constant="300" id="Wrv-JI-0Yi"/>
+                                    <constraint firstItem="Ovl-vl-Szk" firstAttribute="leading" secondItem="OwD-AP-jeS" secondAttribute="leading" constant="10" id="lZU-wJ-c9n"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="7Pj-xx-S0n" userLabel="PeerToPeer" customClass="BlackBorderView" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="370" width="300" height="100"/>
+                                <subviews>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="WcP-Eh-NVS" customClass="BlackBorderView" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="30" width="175" height="1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="UB3-sB-i4X"/>
+                                        </constraints>
+                                    </customView>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oaw-nv-XDU">
+                                        <rect key="frame" x="13" y="68" width="129" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="One to one message" id="sUH-uu-gOF">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gZd-u7-IN9" customClass="InputTextField" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="31" width="175" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" placeholderString="Firend's name" drawsBackground="YES" id="IRj-pi-CaT">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="WcP-Eh-NVS" firstAttribute="top" secondItem="gZd-u7-IN9" secondAttribute="bottom" id="5iZ-av-E2t"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oaw-nv-XDU" secondAttribute="trailing" constant="20" symbolic="YES" id="8WV-81-bxu"/>
+                                    <constraint firstItem="gZd-u7-IN9" firstAttribute="top" secondItem="oaw-nv-XDU" secondAttribute="bottom" constant="20" id="AqJ-Dw-gyk"/>
+                                    <constraint firstItem="gZd-u7-IN9" firstAttribute="leading" secondItem="oaw-nv-XDU" secondAttribute="leading" constant="10" id="JJ7-nw-yhk"/>
+                                    <constraint firstItem="oaw-nv-XDU" firstAttribute="top" secondItem="7Pj-xx-S0n" secondAttribute="top" constant="15" id="KrQ-oO-smV"/>
+                                    <constraint firstAttribute="trailing" secondItem="gZd-u7-IN9" secondAttribute="trailing" constant="100" id="LqO-HF-eS1"/>
+                                    <constraint firstAttribute="height" constant="100" id="UmF-bQ-NZm"/>
+                                    <constraint firstItem="WcP-Eh-NVS" firstAttribute="leading" secondItem="gZd-u7-IN9" secondAttribute="leading" id="o6J-tJ-OJb"/>
+                                    <constraint firstItem="oaw-nv-XDU" firstAttribute="leading" secondItem="7Pj-xx-S0n" secondAttribute="leading" constant="15" id="r15-r9-774"/>
+                                    <constraint firstItem="WcP-Eh-NVS" firstAttribute="trailing" secondItem="gZd-u7-IN9" secondAttribute="trailing" id="uMC-b5-cmL"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="fog-Dx-NA7" userLabel="ChannelChat" customClass="BlackBorderView" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="270" width="300" height="100"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="75L-eA-Sh7">
+                                        <rect key="frame" x="13" y="68" width="112" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Channel message" id="jBs-UB-tcc">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gtN-F7-own" customClass="InputTextField" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="31" width="175" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" placeholderString="Channel name" drawsBackground="YES" id="SP0-EV-6RX">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="82N-7m-Rpl" customClass="BlackBorderView" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="30" width="175" height="1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="nDE-Ln-HVg"/>
+                                        </constraints>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gtN-F7-own" firstAttribute="leading" secondItem="75L-eA-Sh7" secondAttribute="leading" constant="10" id="230-eR-7hh"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="75L-eA-Sh7" secondAttribute="trailing" constant="20" symbolic="YES" id="4Xr-ji-PKa"/>
+                                    <constraint firstAttribute="height" constant="100" id="6KM-3u-8LL"/>
+                                    <constraint firstItem="75L-eA-Sh7" firstAttribute="top" secondItem="fog-Dx-NA7" secondAttribute="top" constant="15" id="6aG-IM-E9n"/>
+                                    <constraint firstItem="82N-7m-Rpl" firstAttribute="top" secondItem="gtN-F7-own" secondAttribute="bottom" id="BZe-PO-7Ck"/>
+                                    <constraint firstItem="82N-7m-Rpl" firstAttribute="leading" secondItem="gtN-F7-own" secondAttribute="leading" id="Psu-hP-cXZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="gtN-F7-own" secondAttribute="trailing" constant="100" id="RQf-7H-qWz"/>
+                                    <constraint firstItem="gtN-F7-own" firstAttribute="top" secondItem="75L-eA-Sh7" secondAttribute="bottom" constant="20" id="WBB-2Y-f7Y"/>
+                                    <constraint firstItem="82N-7m-Rpl" firstAttribute="trailing" secondItem="gtN-F7-own" secondAttribute="trailing" id="ume-eZ-nwk"/>
+                                    <constraint firstItem="75L-eA-Sh7" firstAttribute="leading" secondItem="fog-Dx-NA7" secondAttribute="leading" constant="15" id="x5c-I6-QoH"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="7W3-Lf-S3b" userLabel="RightBackground" customClass="BlackBorderView" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                <rect key="frame" x="300" y="0.0" width="660" height="540"/>
+                                <subviews>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="tYK-Tj-LVr" userLabel="FriendStatus" customClass="TintView" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="470" width="660" height="70"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0L1-17-fzi">
+                                                <rect key="frame" x="18" y="23" width="4" height="24"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="Qf4-xd-C8s">
+                                                    <font key="font" metaFont="system" size="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0L1-17-fzi" secondAttribute="trailing" constant="20" symbolic="YES" id="6sH-UP-cYg"/>
+                                            <constraint firstItem="0L1-17-fzi" firstAttribute="leading" secondItem="tYK-Tj-LVr" secondAttribute="leading" constant="20" id="fmj-0q-pD1"/>
+                                            <constraint firstAttribute="height" constant="70" id="gXu-c0-LEk"/>
+                                            <constraint firstItem="0L1-17-fzi" firstAttribute="centerY" secondItem="tYK-Tj-LVr" secondAttribute="centerY" id="xJD-Hb-kK4"/>
+                                        </constraints>
+                                    </customView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="ezg-4J-b2j">
+                                        <rect key="frame" x="0.0" y="0.0" width="660" height="80"/>
+                                        <subviews>
+                                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nt5-Hk-PW2">
+                                                <rect key="frame" x="80" y="29" width="470" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="22" id="Azy-lR-Zf2"/>
+                                                </constraints>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" drawsBackground="YES" id="cPm-HQ-YKw">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oAX-ra-pLU">
+                                                <rect key="frame" x="560" y="25" width="70" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="IAo-5M-KQW"/>
+                                                    <constraint firstAttribute="height" constant="30" id="Rny-9j-v31"/>
+                                                </constraints>
+                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="send" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="GIs-mc-IeU">
+                                                    <behavior key="behavior" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="sendMessageClick:" target="Hy0-vw-hcF" id="xAn-9N-HhR"/>
+                                                </connections>
+                                            </button>
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="l05-cz-wBG" customClass="BlackBorderView" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                                <rect key="frame" x="80" y="28" width="470" height="1"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="87w-4B-N5t"/>
+                                                </constraints>
+                                            </customView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="l05-cz-wBG" firstAttribute="top" secondItem="nt5-Hk-PW2" secondAttribute="bottom" id="4aI-l1-bbI"/>
+                                            <constraint firstAttribute="trailing" secondItem="oAX-ra-pLU" secondAttribute="trailing" constant="30" id="7Ma-ei-j1n"/>
+                                            <constraint firstItem="oAX-ra-pLU" firstAttribute="leading" secondItem="nt5-Hk-PW2" secondAttribute="trailing" constant="10" id="CsN-mW-baL"/>
+                                            <constraint firstAttribute="height" constant="80" id="FE2-ET-FO5"/>
+                                            <constraint firstItem="l05-cz-wBG" firstAttribute="leading" secondItem="nt5-Hk-PW2" secondAttribute="leading" id="FRV-Ww-83e"/>
+                                            <constraint firstItem="nt5-Hk-PW2" firstAttribute="centerY" secondItem="ezg-4J-b2j" secondAttribute="centerY" id="VNk-CX-a96"/>
+                                            <constraint firstItem="nt5-Hk-PW2" firstAttribute="leading" secondItem="ezg-4J-b2j" secondAttribute="leading" constant="80" id="fLh-tz-syf"/>
+                                            <constraint firstItem="l05-cz-wBG" firstAttribute="trailing" secondItem="nt5-Hk-PW2" secondAttribute="trailing" id="gl5-i7-YEJ"/>
+                                            <constraint firstItem="oAX-ra-pLU" firstAttribute="centerY" secondItem="ezg-4J-b2j" secondAttribute="centerY" id="quS-xP-dUy"/>
+                                        </constraints>
+                                    </customView>
+                                    <scrollView autohidesScrollers="YES" horizontalLineScroll="86" horizontalPageScroll="10" verticalLineScroll="86" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STt-1R-dE1">
+                                        <rect key="frame" x="0.0" y="80" width="660" height="390"/>
+                                        <clipView key="contentView" id="iUe-r1-KOc">
+                                            <rect key="frame" x="1" y="1" width="658" height="388"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="84" rowSizeStyle="automatic" viewBased="YES" id="L01-07-8Mw" customClass="MessageTableView" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="658" height="388"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <size key="intercellSpacing" width="3" height="2"/>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                                    <tableColumns>
+                                                        <tableColumn identifier="" width="655" minWidth="40" maxWidth="2000" id="CgV-Rh-kZ5">
+                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                                                <font key="font" metaFont="smallSystem"/>
+                                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                            </tableHeaderCell>
+                                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="gYS-1o-yPg">
+                                                                <font key="font" metaFont="system"/>
+                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                            <prototypeCellViews>
+                                                                <tableCellView identifier="Own" id="zHM-Hj-tUH" customClass="RightMsgCell" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                                                    <rect key="frame" x="1" y="1" width="655" height="84"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    <subviews>
+                                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2hS-Yb-4qv" customClass="NameLabel" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                                                            <rect key="frame" x="593" y="34" width="44" height="40"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="40" id="4s2-an-UbV"/>
+                                                                                <constraint firstAttribute="width" constant="40" id="Ogp-zT-5NR"/>
+                                                                            </constraints>
+                                                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="pho-8E-8Nq">
+                                                                                <font key="font" metaFont="system"/>
+                                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                            </textFieldCell>
+                                                                        </textField>
+                                                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vy6-Pe-Jw3" customClass="MessageView" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                                                            <rect key="frame" x="210" y="10" width="355" height="64"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="355" id="TW9-Lv-lDr"/>
+                                                                            </constraints>
+                                                                            <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="dialog_right" imagePosition="only" alignment="center" enabled="NO" imageScaling="proportionallyDown" inset="2" id="V1m-En-8F5">
+                                                                                <behavior key="behavior" lightByContents="YES"/>
+                                                                                <font key="font" metaFont="system"/>
+                                                                            </buttonCell>
+                                                                        </button>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="bottom" secondItem="vy6-Pe-Jw3" secondAttribute="bottom" constant="10" id="7ZP-IR-a2u"/>
+                                                                        <constraint firstItem="vy6-Pe-Jw3" firstAttribute="top" secondItem="2hS-Yb-4qv" secondAttribute="top" id="9gU-tt-nqx"/>
+                                                                        <constraint firstItem="2hS-Yb-4qv" firstAttribute="top" secondItem="zHM-Hj-tUH" secondAttribute="top" constant="10" id="T1o-iq-CcB"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="2hS-Yb-4qv" secondAttribute="trailing" constant="20" id="TEF-NL-UBd"/>
+                                                                        <constraint firstItem="2hS-Yb-4qv" firstAttribute="leading" secondItem="vy6-Pe-Jw3" secondAttribute="trailing" constant="30" id="xMn-K6-Du1"/>
+                                                                    </constraints>
+                                                                    <connections>
+                                                                        <outlet property="msgConstraintsWidth" destination="TW9-Lv-lDr" id="jtd-N8-ZnD"/>
+                                                                        <outlet property="msgView" destination="vy6-Pe-Jw3" id="GpD-fi-LEd"/>
+                                                                        <outlet property="nameLabel" destination="2hS-Yb-4qv" id="QVb-cO-6wG"/>
+                                                                    </connections>
+                                                                </tableCellView>
+                                                                <tableCellView identifier="Other" id="L80-Ka-16i" customClass="LeftMsgCell" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                                                    <rect key="frame" x="1" y="87" width="655" height="84"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    <subviews>
+                                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="I5W-Hc-7dk" customClass="NameLabel" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                                                            <rect key="frame" x="18" y="34" width="44" height="40"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="40" id="7oS-Si-CSR"/>
+                                                                                <constraint firstAttribute="height" constant="40" id="v6s-b3-iMj"/>
+                                                                            </constraints>
+                                                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="gHM-0C-9Mj">
+                                                                                <font key="font" metaFont="system"/>
+                                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                            </textFieldCell>
+                                                                        </textField>
+                                                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="T29-VW-VFS" customClass="MessageView" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                                                            <rect key="frame" x="90" y="10" width="355" height="64"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="355" id="QbV-Cv-tX6"/>
+                                                                            </constraints>
+                                                                            <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="dialog_right" imagePosition="only" alignment="left" enabled="NO" imageScaling="proportionallyDown" inset="2" id="WxI-0w-vn2">
+                                                                                <behavior key="behavior" lightByContents="YES"/>
+                                                                                <font key="font" metaFont="system"/>
+                                                                            </buttonCell>
+                                                                        </button>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="T29-VW-VFS" firstAttribute="leading" secondItem="I5W-Hc-7dk" secondAttribute="trailing" constant="30" id="G5i-QS-2q5"/>
+                                                                        <constraint firstItem="I5W-Hc-7dk" firstAttribute="top" secondItem="L80-Ka-16i" secondAttribute="top" constant="10" id="M2M-fm-A86"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="T29-VW-VFS" secondAttribute="bottom" constant="10" id="NKD-kc-T5B"/>
+                                                                        <constraint firstItem="T29-VW-VFS" firstAttribute="top" secondItem="I5W-Hc-7dk" secondAttribute="top" id="cT2-YD-Jd8"/>
+                                                                        <constraint firstItem="I5W-Hc-7dk" firstAttribute="leading" secondItem="L80-Ka-16i" secondAttribute="leading" constant="20" id="foa-rQ-7bd"/>
+                                                                    </constraints>
+                                                                    <connections>
+                                                                        <outlet property="msgConstraintsWidth" destination="QbV-Cv-tX6" id="MFb-1S-u6S"/>
+                                                                        <outlet property="msgView" destination="T29-VW-VFS" id="5fV-P2-K7W"/>
+                                                                        <outlet property="nameLabel" destination="I5W-Hc-7dk" id="Rs5-UZ-2OK"/>
+                                                                    </connections>
+                                                                </tableCellView>
+                                                            </prototypeCellViews>
+                                                        </tableColumn>
+                                                    </tableColumns>
+                                                </tableView>
+                                            </subviews>
+                                        </clipView>
+                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="x8B-WO-jbU">
+                                            <rect key="frame" x="1" y="373" width="658" height="16"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="CPN-YL-HcQ">
+                                            <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="STt-1R-dE1" firstAttribute="top" secondItem="tYK-Tj-LVr" secondAttribute="bottom" id="28g-3h-KVA"/>
+                                    <constraint firstAttribute="trailing" secondItem="ezg-4J-b2j" secondAttribute="trailing" id="2RC-Qt-Aol"/>
+                                    <constraint firstAttribute="bottom" secondItem="ezg-4J-b2j" secondAttribute="bottom" id="Nfb-oj-lrp"/>
+                                    <constraint firstItem="ezg-4J-b2j" firstAttribute="leading" secondItem="7W3-Lf-S3b" secondAttribute="leading" id="Wbq-jv-7Tq"/>
+                                    <constraint firstAttribute="trailing" secondItem="STt-1R-dE1" secondAttribute="trailing" id="Xkf-f2-dLG"/>
+                                    <constraint firstItem="STt-1R-dE1" firstAttribute="leading" secondItem="7W3-Lf-S3b" secondAttribute="leading" id="Yht-is-3xG"/>
+                                    <constraint firstItem="tYK-Tj-LVr" firstAttribute="top" secondItem="7W3-Lf-S3b" secondAttribute="top" id="ZJu-e2-ATJ"/>
+                                    <constraint firstItem="tYK-Tj-LVr" firstAttribute="leading" secondItem="7W3-Lf-S3b" secondAttribute="leading" id="bak-Ir-GeC"/>
+                                    <constraint firstAttribute="trailing" secondItem="tYK-Tj-LVr" secondAttribute="trailing" id="dOy-Bh-RxA"/>
+                                    <constraint firstItem="ezg-4J-b2j" firstAttribute="top" secondItem="STt-1R-dE1" secondAttribute="bottom" id="v1u-e3-gyh"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Pkd-yM-aMa" userLabel="LeftLineView" customClass="BlackBorderView" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="1" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="jIM-fQ-DIO"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="oCU-OZ-BSy" userLabel="TopLineView" customClass="BlackBorderView" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="269" width="300" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="tvl-Qh-9RH"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="vl5-uA-s06" userLabel="RightLineView" customClass="BlackBorderView" customModule="Agora_Signaling_Tutorial" customModuleProvider="target">
+                                <rect key="frame" x="299" y="0.0" width="1" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="Pz9-CZ-t1C"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="vl5-uA-s06" firstAttribute="top" secondItem="fog-Dx-NA7" secondAttribute="bottom" id="2Aw-cK-wWX"/>
+                            <constraint firstItem="7Pj-xx-S0n" firstAttribute="trailing" secondItem="OwD-AP-jeS" secondAttribute="trailing" id="6S3-e7-vg2"/>
+                            <constraint firstItem="7W3-Lf-S3b" firstAttribute="leading" secondItem="OwD-AP-jeS" secondAttribute="trailing" id="D0x-Rm-3lK"/>
+                            <constraint firstAttribute="bottom" secondItem="7W3-Lf-S3b" secondAttribute="bottom" id="FbO-1b-v3T"/>
+                            <constraint firstItem="Pkd-yM-aMa" firstAttribute="top" secondItem="fog-Dx-NA7" secondAttribute="bottom" id="FfV-vM-xi6"/>
+                            <constraint firstItem="Pkd-yM-aMa" firstAttribute="leading" secondItem="27M-nh-G74" secondAttribute="leading" id="FrM-jL-GcQ"/>
+                            <constraint firstItem="vl5-uA-s06" firstAttribute="trailing" secondItem="fog-Dx-NA7" secondAttribute="trailing" id="PuF-oB-vOE"/>
+                            <constraint firstItem="7Pj-xx-S0n" firstAttribute="top" secondItem="OwD-AP-jeS" secondAttribute="bottom" id="QFf-1g-jXg"/>
+                            <constraint firstAttribute="trailing" secondItem="7W3-Lf-S3b" secondAttribute="trailing" id="Qsl-Ov-6DZ"/>
+                            <constraint firstItem="OwD-AP-jeS" firstAttribute="leading" secondItem="27M-nh-G74" secondAttribute="leading" id="RBP-48-adJ"/>
+                            <constraint firstItem="7Pj-xx-S0n" firstAttribute="leading" secondItem="27M-nh-G74" secondAttribute="leading" id="TCB-g2-IFj"/>
+                            <constraint firstItem="fog-Dx-NA7" firstAttribute="leading" secondItem="27M-nh-G74" secondAttribute="leading" id="VBx-uK-qfW"/>
+                            <constraint firstAttribute="bottom" secondItem="vl5-uA-s06" secondAttribute="bottom" id="XZf-cC-Z32"/>
+                            <constraint firstItem="oCU-OZ-BSy" firstAttribute="trailing" secondItem="fog-Dx-NA7" secondAttribute="trailing" id="YHJ-Pc-e4g"/>
+                            <constraint firstAttribute="bottom" secondItem="Pkd-yM-aMa" secondAttribute="bottom" id="YRM-qr-Rc5"/>
+                            <constraint firstItem="fog-Dx-NA7" firstAttribute="trailing" secondItem="7Pj-xx-S0n" secondAttribute="trailing" id="cEd-EK-nHX"/>
+                            <constraint firstItem="7W3-Lf-S3b" firstAttribute="top" secondItem="27M-nh-G74" secondAttribute="top" id="dbv-hN-Yq4"/>
+                            <constraint firstItem="fog-Dx-NA7" firstAttribute="top" secondItem="7Pj-xx-S0n" secondAttribute="bottom" id="ipb-Uy-lbp"/>
+                            <constraint firstItem="oCU-OZ-BSy" firstAttribute="top" secondItem="fog-Dx-NA7" secondAttribute="bottom" id="ivP-Lr-PaS"/>
+                            <constraint firstItem="OwD-AP-jeS" firstAttribute="top" secondItem="27M-nh-G74" secondAttribute="top" id="uEx-EE-qHD"/>
+                            <constraint firstItem="oCU-OZ-BSy" firstAttribute="leading" secondItem="fog-Dx-NA7" secondAttribute="leading" id="ysW-tf-5XQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="6we-99-02j" id="BPA-dO-TiI"/>
+                        <outlet property="channelTextField" destination="gtN-F7-own" id="ixz-7k-gsz"/>
+                        <outlet property="channelView" destination="fog-Dx-NA7" id="bVj-3u-fEF"/>
+                        <outlet property="currentAccountLabel" destination="n7T-yf-x2N" id="RcZ-RL-1vT"/>
+                        <outlet property="friendNameLabel" destination="0L1-17-fzi" id="Zxy-Xm-iAo"/>
+                        <outlet property="friendNameTextField" destination="gZd-u7-IN9" id="nA4-Ni-6Ns"/>
+                        <outlet property="messageTextField" destination="nt5-Hk-PW2" id="CYk-I7-yiw"/>
+                        <outlet property="msgTableView" destination="L01-07-8Mw" id="01p-Np-FoH"/>
+                        <outlet property="peerView" destination="7Pj-xx-S0n" id="Eir-38-fgE"/>
+                    </connections>
+                </viewController>
+                <customObject id="o0T-NY-0z3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="1378"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dialog_right" width="141" height="64"/>
+        <image name="out" width="128" height="128"/>
+        <image name="send" width="26" height="23"/>
+    </resources>
+</document>
