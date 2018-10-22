@@ -15,16 +15,6 @@ The following features are included in this sample project:
 - Leave the chat group
 - Logout
 
-Agora Signaling SDK supports multiple platforms such as Android/IOS/Linux/MacOS/Web/Windows. You can see sample projects for each platform:
-
-* Android: https://github.com/AgoraIO/Agora-Signaling-Tutorial-Android
-* IOS: https://github.com/AgoraIO/Agora-Signaling-Tutorial-iOS-Swift
-* Linux: https://github.com/AgoraIO/Agora-Signaling-Tutorial-Linux
-* MacOS: https://github.com/AgoraIO/Agora-Signaling-Tutorial-macOS-Swift
-* Web: https://github.com/AgoraIO/Agora-Signaling-Tutorial-Web
-* Windows https://github.com/AgoraIO/Agora-Signaling-Tutorial-Windows
-
-
 ## Integration mode & run the sample program
 * Step 1: Register an account at [Agora.io] (https://dashboard.agora.io/cn/signup/) and create your own test project to get the appId
 Then select the Constant.java file in your test project, add appId to the set app_ids and if you want to implement multiple instances, you will need to add more than one appId.
@@ -44,7 +34,7 @@ app_ids.add ("Your appId");
 - If you have a problem with integration, you can ask questions on [Developer Community] (https://dev.agora.io/cn/)
 - If you have pre-sales consulting questions, you can call 400 632 6626, or join the official Q group 12742516 questions
 - If after-sales technical support is required, you can submit a ticket at [Agora Dashboard] (https://dashboard.agora.io)
-- If you find a bug in the sample code, please feel free to submit [issue] (https://github.com/AgoraIO/Agora-Android-Tutorial-1to1/issues)
+- If you find a bug in the sample code, please feel free to submit [issue] (https://github.com/AgoraIO/Signaling/issues)
 
 ## Code License
 The MIT License (MIT).

@@ -13,16 +13,6 @@ With this sample app, you can:
 - Leave channel
 - Logout signaling server
 
-Agora signaling SDK supports Android / Web / MacOS. You can find demos of these platform here:
-
-- Android: https://github.com/AgoraIO/Agora-Signaling-Tutorial-Android
-- Web    : https://github.com/AgoraIO/Agora-Signaling-Tutorial-Web
-- MacOS  : https://github.com/AgoraIO/Agora-Signaling-Tutorial-macOS-Swift
-- Linux  : https://github.com/AgoraIO/Agora-Signaling-Tutorial-Linux
-- Java   : https://github.com/AgoraIO/Agora-Signaling-Tutorial-Java
-- Windows: https://github.com/AgoraIO/Agora-Signaling-Tutorial-Windows
-
-
 ## Running the App
 First, create a developer account at [Agora.io](https://dashboard.agora.io/signin/), and obtain an App ID.
 Update "Agora-Signaling-Tutorial-iOS-Swift/Agora-Signaling-Tutorial/KeyCenter.swift" with your App ID.
@@ -30,8 +20,6 @@ Update "Agora-Signaling-Tutorial-iOS-Swift/Agora-Signaling-Tutorial/KeyCenter.sw
 ```
 let AppId: String = "Your App Id"
 ```
-
-
 
 Next, download the Agora Signaling SDK from Agora.io SDK. Unzip the downloaded SDK package and copy the "libs" folder to the project folder.
 
@@ -44,7 +32,7 @@ Finally, Open Agora-Signaling-Tutorial.xcodeproj, connect your iPhone／iPad dev
 
 ## Connect Us
 - You can find full API document at [Document Center](https://docs.agora.io/en/)
-- You can file bugs about this demo at [issue](https://github.com/AgoraIO/Agora-Signaling-Tutorial-iOS-Swift/issues)
+- You can file bugs about this demo at [issue](https://github.com/AgoraIO/Signaling/issues)
 
 ## License
 The MIT License (MIT).

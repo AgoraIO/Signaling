@@ -14,16 +14,6 @@ With this sample app, you can:
 - Leave the group
 - Logout
 
-Agora Signaling SDK supports iOS / Android / Web. You can find demos of these platform here:
-
-- Android: https://github.com/AgoraIO/Agora-Signaling-Tutorial-Android
-- IOS    : https://github.com/AgoraIO/Agora-Signaling-Tutorial-iOS-Swift
-- Linux    : https://github.com/AgoraIO/Agora-Signaling-Tutorial-Linux
-- MacOS  : https://github.com/AgoraIO/Agora-Signaling-Tutorial-macOS-Swift  
-- Windows: https://github.com/AgoraIO/Agora-Signaling-Tutorial-Windows
-- Java   : https://github.com/AgoraIO/Agora-Signaling-Tutorial-Java
-
-
 ## Running the App
 First, create a developer account at [Agora.io](https://dashboard.agora.io/signin/), and obtain an App ID.
 Then select the editor in the test project, click App Certificate, and get the App Certificate according to the operation.
@@ -61,7 +51,7 @@ login(account, token = '_no_need_token') {
 
 ## Contact Us
 - You can find full API document at [Document Center](https://docs.agora.io/en/)
-- You can file bugs about this demo at [issue](https://github.com/AgoraIO/Agora-Android-Tutorial-1to1/issues)
+- You can file bugs about this demo at [issue](https://github.com/AgoraIO/Signaling/issues)
 
 ## License
 The MIT License (MIT).

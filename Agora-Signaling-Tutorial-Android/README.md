@@ -14,16 +14,6 @@ With this sample app, you can:
 - Leave channel
 - Logout Signaling server
 
-Agora Signaling SDK supports iOS / Android / Web. You can find demos of these platform here:
-
-- iOS : https://github.com/AgoraIO/Agora-Signaling-Tutorial-iOS-Swift
-- Web : https://github.com/AgoraIO/Agora-Signaling-Tutorial-Web
-- MacOS : https://github.com/AgoraIO/Agora-Signaling-Tutorial-macOS-Swift
-- Linux : https://github.com/AgoraIO/Agora-Signaling-Tutorial-Linux
-- Java : https://github.com/AgoraIO/Agora-Signaling-Tutorial-Java
-- Windows: https://github.com/AgoraIO/Agora-Signaling-Tutorial-Windows
-
-
 ## Running the App
 First, create a developer account at [Agora.io](https://dashboard.agora.io/signin/), and obtain an App ID.
 Update "app/src/main/res/values/strings_config.xml" with your App ID .
@@ -51,7 +41,7 @@ Or use `Gradle` to build and run.
 
 ## Connect Us
 - You can find full API document at [Document Center](https://docs.agora.io/en/)
-- You can file bugs about this demo at [issue](https://github.com/AgoraIO/Agora-Android-Tutorial-1to1/issues)
+- You can file bugs about this demo at [issue](https://github.com/AgoraIO/Signaling/issues)
 
 ## License
 The MIT License (MIT).

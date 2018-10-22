@@ -14,16 +14,6 @@
 - 离开频道
 - 注销信令登录
 
-Agora 信令 SDK 支持 Android / Web / MacOS等多个平台，你可以查看对应各平台的示例项目：
-
-- Android: https://github.com/AgoraIO/Agora-Signaling-Tutorial-Android
-- Web    : https://github.com/AgoraIO/Agora-Signaling-Tutorial-Web
-- MacOS  : https://github.com/AgoraIO/Agora-Signaling-Tutorial-macOS-Swift
-- Linux  : https://github.com/AgoraIO/Agora-Signaling-Tutorial-Linux
-- Java   : https://github.com/AgoraIO/Agora-Signaling-Tutorial-Java
-- Windows: https://github.com/AgoraIO/Agora-Signaling-Tutorial-Windows
-
-
 ## 运行示例程序
 首先在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。
 
@@ -32,8 +22,6 @@ Agora 信令 SDK 支持 Android / Web / MacOS等多个平台，你可以查看�
 ```
 let AppId: String = "Your App Id"
 ```
-
-
 
 然后在 Agora.io SDK 下载 信令 SDK，解压后将其中的 libs 文件夹复制到本项目目录下，和 “Agora-Signaling-Tutorial” 文件夹平级。
 
@@ -48,7 +36,7 @@ let AppId: String = "Your App Id"
 - 如果在集成中遇到问题, 你可以到 [开发者社区](https://dev.agora.io/cn/) 提问
 - 如果有售前咨询问题, 可以拨打 400 632 6626，或加入官方Q群 12742516 提问
 - 如果需要售后技术支持, 你可以在 [Agora Dashboard](https://dashboard.agora.io) 提交工单
-- 如果发现了示例代码的 bug, 欢迎提交 [issue](https://github.com/AgoraIO/Agora-Signaling-Tutorial-iOS-Swift/issues)
+- 如果发现了示例代码的 bug, 欢迎提交 [issue](https://github.com/AgoraIO/Signaling/issues)
 
 ## 代码许可
 The MIT License (MIT).

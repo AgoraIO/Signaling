@@ -16,17 +16,6 @@ The following features are included in this sample project:
 - Leave the chat group
 - Logout
 
-Agora Signaling SDK supports multiple platforms such as Android/iOS/Linux/macOS/Web/Windows/Java. You can see sample projects for each platform:
-
-* Android: https://github.com/AgoraIO/Agora-Signaling-Tutorial-Android
-* IOS: https://github.com/AgoraIO/Agora-Signaling-Tutorial-iOS-Swift
-* Linux: https://github.com/AgoraIO/Agora-Signaling-Tutorial-Linux
-* MacOS: https://github.com/AgoraIO/Agora-Signaling-Tutorial-macOS-Swift
-* Web: https://github.com/AgoraIO/Agora-Signaling-Tutorial-Web
-* Windows https://github.com/AgoraIO/Agora-Signaling-Tutorial-Windows
-* JAVA https://github.com/AgoraIO/Agora-Signaling-Tutorial-Java
-
-
 ## Running the App
 * Step 1: Register an account at [Agora.io] (https://dashboard.agora.io/en/signup/) and create your own test project to get the appId
 Then select the interactive_dialogue.py file in your test project, add appId to the set APP_ID.
@@ -42,7 +31,7 @@ Then select the interactive_dialogue.py file in your test project, add appId to 
 
 ## Contact us
 - You can find full API document at [Document Center](https://docs.agora.io/en/)
-- You can file bugs about this demo at [issue](https://github.com/AgoraIO/Agora-Signaling-Tutorial-Python/issues)
+- You can file bugs about this demo at [issue](https://github.com/AgoraIO/Signaling/issues)
 
 
 ## Code License
