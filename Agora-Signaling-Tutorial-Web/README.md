@@ -17,12 +17,12 @@ With this sample app, you can:
 ## Running the App
 First, create a developer account at [Agora.io](https://dashboard.agora.io/signin/), and obtain an App ID.
 Then select the editor in the test project, click App Certificate, and get the App Certificate according to the operation.
-Update "static/agora.config.js" in the project root dir with your App ID and App Certificate.
+Update "static/agora.config.js" in the project root dir with your App ID and App Certificate. You may leave this field blank if you have not turned app certificate option on.
 
 ``` javascript
 const AGORA_APP_ID = 'abcdefg'
 
-const AGORA_CERTIFICATE_ID = 'hijklmn'
+const AGORA_CERTIFICATE_ID = '' // leave it blank if not needed
 ```
 
 Then rename the signaling sdk you got to 'AgoraSig.js' and put it under the path '/static/'. Run npm to install dependency and build dist (Or you can also run in dev mode and open the page at localhost:8080 by default in browser)

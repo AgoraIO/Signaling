@@ -17,12 +17,12 @@
 ## 运行示例程序
 首先在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。
 然后选择测试项目里的编辑，App Certificate 点击启用，根据操作拿到App Certificate。
-将 AppID 和App Certificate 填写进 "static/agora.config.js" 中的两个常量中
+将 AppID 和App Certificate 填写进 "static/agora.config.js" 中的两个常量中, 若没有开启App Certificate则可以直接留空
 
 ``` javascript
 const AGORA_APP_ID = 'abcdefg'
 
-const AGORA_CERTIFICATE_ID = 'hijklmn'
+const AGORA_CERTIFICATE_ID = '' //未开启App certificate可留空
 ```
 
 将您获得的信令SDK文件重命名为'AgoraSig.js'置于'/static/'目录下。在项目根目录使用npm安装项目依赖，并打包出发布文件（或者您也可以使用dev模式，创建一个热重载的开发环境，默认情况下在浏览器中打开localhost:8080）
