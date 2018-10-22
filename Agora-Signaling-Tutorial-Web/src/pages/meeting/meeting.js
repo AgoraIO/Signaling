@@ -5,6 +5,7 @@ import 'bootstrap-material-design';
 import '../../assets/stylesheets/main.css';
 import { Browser, Utils } from '../../utils';
 import SignalingClient from '../../utils/signalingClient';
+import { APPID, APP_CERTIFICATE } from '../../utils/config';
 
 class Client {
   // Construct a meeting client with signal client and rtc client
@@ -467,8 +468,8 @@ class Client {
   }
 }
 
-const appid = AGORA_APP_ID || '',
-  appcert = AGORA_CERTIFICATE_ID || '';
+const appid = APPID || '',
+  appcert = APP_CERTIFICATE || '';
 if (!appid) {
   alert('App ID missing!');
 }
