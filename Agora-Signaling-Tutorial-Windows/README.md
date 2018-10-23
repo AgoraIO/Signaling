@@ -15,15 +15,13 @@ With this sample app, you can:
 
 ## Running the App
 First, create a developer account at [Agora.io](https://dashboard.agora.io/signin/), and obtain an App ID.
-Then select the editor in the test project, click App Certificate, and get the App Certificate according to the operation.
 Update "Agora-Signaling-Tutorial-Windows/AgoraSignal.ini" with your App ID and App Certificate.
 
 ```
 [BaseInfo]
 AppID=
-AppCertificatedId=
 ```
-The user can generate a tokenID based on the AppCertificateID, and the tokenID can also be '_no_need_token'
+The user can generate a tokenID based on the AppCertificateID, or just use '_no_need_token' as tokenID.
 
 ## Developer Environment Requirements
 - win7 above

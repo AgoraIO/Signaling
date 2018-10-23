@@ -16,15 +16,13 @@
 
 ## 运行示例程序
 - 首先在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。
-然后选择测试项目里的编辑，如果该 AppID 对应的 Certificate 已经启用，根据操作拿到 App Certificate。
-将 AppID 和 App Certificate 填写进 "AgoraSignal.ini" 中
+将 AppID 填写进 "AgoraSignal.ini" 中
 
 ```
 [BaseInfo]
 AppID=
-AppCertificatedId=
 ```
-- 用户可以根据 AppCertificateID 生成 tokenID, tokenID也可以为 "_no_need_token".
+- 用户可以根据 AppCertificateID 生成 tokenID, 或者使用 "_no_need_token" 作为 tokenID.
 
 ## 运行环境
 - win7以上

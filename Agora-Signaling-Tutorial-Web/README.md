@@ -16,8 +16,7 @@ With this sample app, you can:
 
 ## Running the App
 First, create a developer account at [Agora.io](https://dashboard.agora.io/signin/), and obtain an App ID.
-Then select the editor in the test project, click App Certificate, and get the App Certificate according to the operation.
-Update "static/agora.config.js" in the project root dir with your App ID and App Certificate. You may leave this field blank if you have not turned app certificate option on.
+Update "static/agora.config.js" in the project root dir with your App ID. You may leave AGORA_CERTIFICATE_ID blank if you have not turned app certificate option on.
 
 ``` javascript
 const AGORA_APP_ID = 'abcdefg'

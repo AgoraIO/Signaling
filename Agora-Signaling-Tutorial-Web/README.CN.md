@@ -16,8 +16,7 @@
 
 ## 运行示例程序
 首先在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。
-然后选择测试项目里的编辑，App Certificate 点击启用，根据操作拿到App Certificate。
-将 AppID 和App Certificate 填写进 "static/agora.config.js" 中的两个常量中, 若没有开启App Certificate则可以直接留空
+将 AppID 填写进 "static/agora.config.js" 中，若没有开启 App Certificate, 则可以把 AGORA_CERTIFICATE_ID 直接留空
 
 ``` javascript
 const AGORA_APP_ID = 'abcdefg'
