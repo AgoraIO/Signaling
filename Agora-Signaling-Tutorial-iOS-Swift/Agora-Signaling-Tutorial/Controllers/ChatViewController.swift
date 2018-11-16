@@ -43,12 +43,13 @@ class ChatViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let chatRoomVC = segue.destination as! ChatRoomViewController
-        chatRoomVC.account = sender as! String
-        if chatMessages[chatRoomVC.account] != nil {
-            chatRoomVC.messageList = chatMessages[chatRoomVC.account]!
-        } else {
-            chatRoomVC.messageList.identifier = chatRoomVC.account
+        if let chatRoomVC = segue.destination as? ChatRoomViewController, let account = sender as? String {
+            chatRoomVC.account = account
+            if chatMessages[chatRoomVC.account] != nil {
+                chatRoomVC.messageList = chatMessages[chatRoomVC.account]!
+            } else {
+                chatRoomVC.messageList.identifier = chatRoomVC.account
+            }
         }
     }
     

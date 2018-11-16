@@ -17,8 +17,8 @@ class MessageView: NSButton {
     lazy var textDic : NSMutableDictionary = {
         
         var dic = NSMutableDictionary()
-        dic.setObject(NSColor.white, forKey: NSAttributedStringKey.foregroundColor as NSCopying)
-        dic.setObject(NSFont.systemFont(ofSize: 22), forKey: NSAttributedStringKey.font as NSCopying)
+        dic.setObject(NSColor.white, forKey: NSAttributedString.Key.foregroundColor as NSCopying)
+        dic.setObject(NSFont.systemFont(ofSize: 22), forKey: NSAttributedString.Key.font as NSCopying)
         
         return dic
     }()
@@ -29,7 +29,7 @@ class MessageView: NSButton {
         if message != nil {
             
             let rect = NSRect(x: 10, y: 10, width: self.frame.width - 10, height: self.frame.height - 10)
-            message?.draw(in: rect, withAttributes: (self.textDic as! [NSAttributedStringKey : Any]))
+            message?.draw(in: rect, withAttributes: (self.textDic as! [NSAttributedString.Key : Any]))
         }
         
     }

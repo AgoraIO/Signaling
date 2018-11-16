@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		A72E90921FDF8AB6006D88FA /* KeyCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCenter.swift; sourceTree = "<group>"; };
-		A72E90981FDFB8D0006D88FA /* AgoraSigKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraSigKit.framework; path = "Agora-Signaling-Tutorial/libs/AgoraSigKit.framework"; sourceTree = "<group>"; };
+		A72E90981FDFB8D0006D88FA /* AgoraSigKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraSigKit.framework; path = libs/AgoraSigKit.framework; sourceTree = SOURCE_ROOT; };
 		A72E909A1FDFBCE8006D88FA /* CustomSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
 		A72E909C1FDFC8C5006D88FA /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		A72E90A01FDFCD93006D88FA /* BlackBorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBorderView.swift; sourceTree = "<group>"; };
@@ -45,7 +45,6 @@
 		A7B7E43C1FD1049E00A5FB18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7B7E43E1FD1049E00A5FB18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7B7E43F1FD1049E00A5FB18 /* Agora_Signaling_Tutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Agora_Signaling_Tutorial.entitlements; sourceTree = "<group>"; };
-		A7B7E4691FD128CC00A5FB18 /* Agora-Signaling-Tutorial-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Agora-Signaling-Tutorial-Bridging-Header.h"; sourceTree = "<group>"; };
 		A7B7E46C1FD129D400A5FB18 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A7B7E4701FD4F73A00A5FB18 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		A7F3DC0D1FE80BE700AAB2CD /* NameLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameLabel.swift; sourceTree = "<group>"; };
@@ -71,7 +70,6 @@
 				A7B7E4391FD1049E00A5FB18 /* Assets.xcassets */,
 				A7B7E43E1FD1049E00A5FB18 /* Info.plist */,
 				A7B7E43F1FD1049E00A5FB18 /* Agora_Signaling_Tutorial.entitlements */,
-				A7B7E4691FD128CC00A5FB18 /* Agora-Signaling-Tutorial-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -168,12 +166,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = CavanSu;
 				TargetAttributes = {
 					A7B7E4311FD1049E00A5FB18 = {
 						CreatedOnToolsVersion = 9.1;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -258,6 +256,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -265,6 +264,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -315,6 +315,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -322,6 +323,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -355,25 +357,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = URLGNR2V35;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/libs",
 					"$(SRCROOT)/libs",
 				);
 				INFOPLIST_FILE = "Agora-Signaling-Tutorial/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Agora-Signaling-Tutorial/libs",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.agora.Agora-Signaling-Tutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Agora-Signaling-Tutorial/Agora-Signaling-Tutorial-Bridging-Header.h";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -382,24 +382,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = URLGNR2V35;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/libs",
 					"$(SRCROOT)/libs",
 				);
 				INFOPLIST_FILE = "Agora-Signaling-Tutorial/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Agora-Signaling-Tutorial/libs",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.agora.Agora-Signaling-Tutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Agora-Signaling-Tutorial/Agora-Signaling-Tutorial-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

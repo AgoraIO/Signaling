@@ -16,13 +16,6 @@ class MainViewController: NSViewController, NSTextFieldDelegate {
     fileprivate var agoraAPI : AgoraAPI!
     fileprivate var currentUID : UInt32!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        view.wantsLayer = true
-        view.layer?.backgroundColor = NSColor.white.cgColor
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,7 +31,7 @@ class MainViewController: NSViewController, NSTextFieldDelegate {
     }
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
-        guard let segueID = segue.identifier , !segueID.rawValue.isEmpty else {
+        guard let segueID = segue.identifier , !segueID.isEmpty else {
             return
         }
         
@@ -64,7 +57,7 @@ private extension MainViewController {
             self.currentUID = uid
             
             DispatchQueue.main.async {
-                self.performSegue(withIdentifier: NSStoryboardSegue.Identifier(rawValue: "mainToChat"), sender: nil)
+                self.performSegue(withIdentifier: "mainToChat", sender: nil)
                 print("login success")
             }
             

@@ -64,8 +64,6 @@ class ChatViewController: NSViewController {
 private extension ChatViewController {
     
     func setupViews() {
-        view.wantsLayer = true
-        view.layer?.backgroundColor = NSColor.white.cgColor;
         peerView.wantsLayer = true
         channelView.wantsLayer = true
         
@@ -193,7 +191,6 @@ private extension ChatViewController {
         
         
         peerView.layer?.backgroundColor = NSColor(calibratedRed: 68.0 / 255, green: 159.0 / 255, blue: 227.0 / 255, alpha: 1.0).cgColor
-        channelView.layer?.backgroundColor = NSColor.white.cgColor
     }
     
     func startChatInChannel() {
@@ -208,7 +205,6 @@ private extension ChatViewController {
         channelTextField.abortEditing()
         
         channelView.layer?.backgroundColor = NSColor(calibratedRed: 68.0 / 255, green: 159.0 / 255, blue: 227.0 / 255, alpha: 1.0).cgColor
-        peerView.layer?.backgroundColor = NSColor.white.cgColor
     }
     
     func leaveChannel() {

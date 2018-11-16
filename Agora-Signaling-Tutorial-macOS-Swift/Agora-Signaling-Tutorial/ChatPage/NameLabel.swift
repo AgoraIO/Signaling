@@ -20,8 +20,8 @@ class NameLabel: NSTextField {
     lazy var textDic : NSMutableDictionary = {
         
         var dic = NSMutableDictionary()
-        dic.setObject(NSColor.white, forKey: NSAttributedStringKey.foregroundColor as NSCopying)
-        dic.setObject(NSFont.systemFont(ofSize: 18), forKey: NSAttributedStringKey.font as NSCopying)
+        dic.setObject(NSColor.white, forKey: NSAttributedString.Key.foregroundColor as NSCopying)
+        dic.setObject(NSFont.systemFont(ofSize: 18), forKey: NSAttributedString.Key.font as NSCopying)
         
         return dic
     }()
@@ -40,7 +40,7 @@ class NameLabel: NSTextField {
             context?.fillPath(using: CGPathFillRule.winding)
             let rect = NSRect(x: x, y: y, width: w, height: h)
             
-            name.draw(in: rect, withAttributes: self.textDic as? [NSAttributedStringKey : Any])
+            name.draw(in: rect, withAttributes: self.textDic as? [NSAttributedString.Key : Any])
         }
         
     }
@@ -51,7 +51,7 @@ class NameLabel: NSTextField {
         self.stringValue = ""
         
         self.name = name
-        let textRect = name.boundingRect(with: NSMakeSize(self.frame.width - 10, CGFloat(MAXFLOAT)), options: [.usesLineFragmentOrigin], attributes: [NSAttributedStringKey.font: NSFont.systemFont(ofSize: 18)])
+        let textRect = name.boundingRect(with: NSMakeSize(self.frame.width - 10, CGFloat(MAXFLOAT)), options: [.usesLineFragmentOrigin], attributes: [NSAttributedString.Key.font: NSFont.systemFont(ofSize: 18)])
         
         x = (self.frame.width - textRect.width) * 0.5
         y = (self.frame.height - textRect.height) * 0.5

@@ -41,8 +41,9 @@ class ChannelViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let channelRoomCV = segue.destination as! ChannelRoomViewController
-        channelRoomCV.channelName = sender as! String
+        if let channelRoomCV = segue.destination as? ChannelRoomViewController, let channelName = sender as? String {
+            channelRoomCV.channelName = channelName
+        }
     }
     
     @IBAction func joinButtonClicked(_ sender: UIButton) {

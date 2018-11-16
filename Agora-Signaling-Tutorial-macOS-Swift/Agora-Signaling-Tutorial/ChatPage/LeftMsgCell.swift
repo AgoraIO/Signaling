@@ -19,7 +19,7 @@ class LeftMsgCell: NSTableCellView {
         
         let msg = message.text as NSString
         
-        let textRect = (msg as NSString).boundingRect(with: NSMakeSize(self.frame.width - 50 - 20 - 30 - 100, CGFloat(MAXFLOAT)), options: [.usesLineFragmentOrigin], attributes: [NSAttributedStringKey.font: NSFont.systemFont(ofSize: 22)])
+        let textRect = (msg as NSString).boundingRect(with: NSMakeSize(self.frame.width - 50 - 20 - 30 - 100, CGFloat(MAXFLOAT)), options: [.usesLineFragmentOrigin], attributes: [NSAttributedString.Key.font: NSFont.systemFont(ofSize: 22)])
         
         msgConstraintsWidth.constant = textRect.width + 20
         msgView.addNewMsg(msg: message.text, isOther: true)

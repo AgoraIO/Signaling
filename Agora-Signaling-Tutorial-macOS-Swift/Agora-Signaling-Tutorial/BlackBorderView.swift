@@ -23,7 +23,6 @@ class BlackBorderView: NSView {
         wantsLayer = true
         layer?.borderWidth = 1
         layer?.borderColor = NSColor.lightGray.cgColor
-        layer?.backgroundColor = NSColor.white.cgColor;
     }
     
     

@@ -21,9 +21,6 @@ class MessageTableView: NSTableView {
             msgRecordArrDic = [String: [MessageModel]]()
             self.delegate = self
             self.dataSource = self
-            
-            self.wantsLayer = true
-            self.layer?.backgroundColor = NSColor.blue.cgColor
         }
         
     }
@@ -112,7 +109,7 @@ extension MessageTableView : NSTableViewDelegate {
         let message = msgRecordArrDic[currentChatWith!]![row]
         let msg = message.text
 
-        let textRect = (msg! as NSString).boundingRect(with: NSMakeSize(self.frame.width - 50 - 20 - 100, CGFloat(MAXFLOAT)), options: [.usesLineFragmentOrigin], attributes: [NSAttributedStringKey.font: NSFont.systemFont(ofSize: 22)])
+        let textRect = (msg! as NSString).boundingRect(with: NSMakeSize(self.frame.width - 50 - 20 - 100, CGFloat(MAXFLOAT)), options: [.usesLineFragmentOrigin], attributes: [NSAttributedString.Key.font: NSFont.systemFont(ofSize: 22)])
 
         return CGFloat(textRect.height + 20 + 20)
     }
