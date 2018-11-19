@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		385FC2DA219E839600304657 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 385FC2D9219E839600304657 /* AppDelegate.m */; };
+		385FC2E0219E839600304657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385FC2DE219E839600304657 /* Main.storyboard */; };
+		385FC2E2219E839800304657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385FC2E1219E839800304657 /* Assets.xcassets */; };
+		385FC2E5219E839800304657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385FC2E3219E839800304657 /* LaunchScreen.storyboard */; };
+		385FC2E8219E839800304657 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 385FC2E7219E839800304657 /* main.m */; };
+		385FC30C219E85DB00304657 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 385FC30B219E85DB00304657 /* libc++.tbd */; };
+		385FC30E219E860100304657 /* AgoraSigKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385FC30D219E860100304657 /* AgoraSigKit.framework */; };
+		385FC311219E863E00304657 /* KeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 385FC310219E863E00304657 /* KeyCenter.m */; };
+		385FC314219E884400304657 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 385FC313219E884400304657 /* Message.m */; };
+		385FC317219E8A9D00304657 /* AgoraSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 385FC316219E8A9D00304657 /* AgoraSignal.m */; };
+		385FC31A219E98D900304657 /* LeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 385FC319219E98D900304657 /* LeftCell.m */; };
+		385FC31D219E9A9B00304657 /* RightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 385FC31C219E9A9B00304657 /* RightCell.m */; };
+		385FC320219EA90200304657 /* LogWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 385FC31F219EA90100304657 /* LogWriter.m */; };
+		385FC323219EAF2E00304657 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 385FC322219EAF2E00304657 /* UIColor+Extension.m */; };
+		385FC326219EAFCE00304657 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 385FC325219EAFCE00304657 /* ChatViewController.m */; };
+		385FC32F219EC5F800304657 /* ChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 385FC32E219EC5F800304657 /* ChatRoomViewController.m */; };
+		385FC332219EDCC400304657 /* ChannelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 385FC331219EDCC400304657 /* ChannelViewController.m */; };
+		385FC335219EDF4700304657 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 385FC334219EDF4700304657 /* MainViewController.m */; };
+		385FC33821A0154800304657 /* ChannelRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 385FC33721A0154800304657 /* ChannelRoomViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		385FC2D5219E839600304657 /* Agora-Signaling-Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agora-Signaling-Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		385FC2D8219E839600304657 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		385FC2D9219E839600304657 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		385FC2DF219E839600304657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		385FC2E1219E839800304657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		385FC2E4219E839800304657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		385FC2E6219E839800304657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		385FC2E7219E839800304657 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		385FC30B219E85DB00304657 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		385FC30D219E860100304657 /* AgoraSigKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraSigKit.framework; path = libs/AgoraSigKit.framework; sourceTree = SOURCE_ROOT; };
+		385FC30F219E863E00304657 /* KeyCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyCenter.h; sourceTree = "<group>"; };
+		385FC310219E863E00304657 /* KeyCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyCenter.m; sourceTree = "<group>"; };
+		385FC312219E884400304657 /* Message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		385FC313219E884400304657 /* Message.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		385FC315219E8A9D00304657 /* AgoraSignal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgoraSignal.h; sourceTree = "<group>"; };
+		385FC316219E8A9D00304657 /* AgoraSignal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgoraSignal.m; sourceTree = "<group>"; };
+		385FC318219E98D900304657 /* LeftCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftCell.h; sourceTree = "<group>"; };
+		385FC319219E98D900304657 /* LeftCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftCell.m; sourceTree = "<group>"; };
+		385FC31B219E9A9B00304657 /* RightCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RightCell.h; sourceTree = "<group>"; };
+		385FC31C219E9A9B00304657 /* RightCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RightCell.m; sourceTree = "<group>"; };
+		385FC31E219EA90100304657 /* LogWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogWriter.h; sourceTree = "<group>"; };
+		385FC31F219EA90100304657 /* LogWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogWriter.m; sourceTree = "<group>"; };
+		385FC321219EAF2E00304657 /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		385FC322219EAF2E00304657 /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		385FC324219EAFCE00304657 /* ChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		385FC325219EAFCE00304657 /* ChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		385FC32D219EC5F800304657 /* ChatRoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatRoomViewController.h; sourceTree = "<group>"; };
+		385FC32E219EC5F800304657 /* ChatRoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatRoomViewController.m; sourceTree = "<group>"; };
+		385FC330219EDCC400304657 /* ChannelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelViewController.h; sourceTree = "<group>"; };
+		385FC331219EDCC400304657 /* ChannelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelViewController.m; sourceTree = "<group>"; };
+		385FC333219EDF4700304657 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		385FC334219EDF4700304657 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		385FC33621A0154800304657 /* ChannelRoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelRoomViewController.h; sourceTree = "<group>"; };
+		385FC33721A0154800304657 /* ChannelRoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelRoomViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		385FC2D2219E839600304657 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385FC30E219E860100304657 /* AgoraSigKit.framework in Frameworks */,
+				385FC30C219E85DB00304657 /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		385FC2CC219E839600304657 = {
+			isa = PBXGroup;
+			children = (
+				385FC2D7219E839600304657 /* Agora-Signaling-Tutorial */,
+				385FC2D6219E839600304657 /* Products */,
+				385FC30A219E85DB00304657 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		385FC2D6219E839600304657 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				385FC2D5219E839600304657 /* Agora-Signaling-Tutorial.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		385FC2D7219E839600304657 /* Agora-Signaling-Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				385FC30F219E863E00304657 /* KeyCenter.h */,
+				385FC310219E863E00304657 /* KeyCenter.m */,
+				385FC2F7219E85A600304657 /* Controllers */,
+				385FC2F4219E85A600304657 /* Models */,
+				385FC2F1219E85A600304657 /* Views */,
+				385FC2EE219E85A600304657 /* Utils */,
+				385FC2DE219E839600304657 /* Main.storyboard */,
+				385FC2D8219E839600304657 /* AppDelegate.h */,
+				385FC2D9219E839600304657 /* AppDelegate.m */,
+				385FC2E1219E839800304657 /* Assets.xcassets */,
+				385FC2E3219E839800304657 /* LaunchScreen.storyboard */,
+				385FC2E6219E839800304657 /* Info.plist */,
+				385FC2E7219E839800304657 /* main.m */,
+				385FC30D219E860100304657 /* AgoraSigKit.framework */,
+			);
+			path = "Agora-Signaling-Tutorial";
+			sourceTree = "<group>";
+		};
+		385FC2EE219E85A600304657 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				385FC321219EAF2E00304657 /* UIColor+Extension.h */,
+				385FC322219EAF2E00304657 /* UIColor+Extension.m */,
+				385FC31E219EA90100304657 /* LogWriter.h */,
+				385FC31F219EA90100304657 /* LogWriter.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		385FC2F1219E85A600304657 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				385FC318219E98D900304657 /* LeftCell.h */,
+				385FC319219E98D900304657 /* LeftCell.m */,
+				385FC31B219E9A9B00304657 /* RightCell.h */,
+				385FC31C219E9A9B00304657 /* RightCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		385FC2F4219E85A600304657 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				385FC312219E884400304657 /* Message.h */,
+				385FC313219E884400304657 /* Message.m */,
+				385FC315219E8A9D00304657 /* AgoraSignal.h */,
+				385FC316219E8A9D00304657 /* AgoraSignal.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		385FC2F7219E85A600304657 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				385FC333219EDF4700304657 /* MainViewController.h */,
+				385FC334219EDF4700304657 /* MainViewController.m */,
+				385FC324219EAFCE00304657 /* ChatViewController.h */,
+				385FC325219EAFCE00304657 /* ChatViewController.m */,
+				385FC32D219EC5F800304657 /* ChatRoomViewController.h */,
+				385FC32E219EC5F800304657 /* ChatRoomViewController.m */,
+				385FC330219EDCC400304657 /* ChannelViewController.h */,
+				385FC331219EDCC400304657 /* ChannelViewController.m */,
+				385FC33621A0154800304657 /* ChannelRoomViewController.h */,
+				385FC33721A0154800304657 /* ChannelRoomViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		385FC30A219E85DB00304657 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				385FC30B219E85DB00304657 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		385FC2D4219E839600304657 /* Agora-Signaling-Tutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 385FC2EB219E839800304657 /* Build configuration list for PBXNativeTarget "Agora-Signaling-Tutorial" */;
+			buildPhases = (
+				385FC2D1219E839600304657 /* Sources */,
+				385FC2D2219E839600304657 /* Frameworks */,
+				385FC2D3219E839600304657 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Agora-Signaling-Tutorial";
+			productName = "Agora-Signaling-Tutorial";
+			productReference = 385FC2D5219E839600304657 /* Agora-Signaling-Tutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		385FC2CD219E839600304657 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Agora;
+				TargetAttributes = {
+					385FC2D4219E839600304657 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 385FC2D0219E839600304657 /* Build configuration list for PBXProject "Agora-Signaling-Tutorial" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 385FC2CC219E839600304657;
+			productRefGroup = 385FC2D6219E839600304657 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				385FC2D4219E839600304657 /* Agora-Signaling-Tutorial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		385FC2D3219E839600304657 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385FC2E5219E839800304657 /* LaunchScreen.storyboard in Resources */,
+				385FC2E2219E839800304657 /* Assets.xcassets in Resources */,
+				385FC2E0219E839600304657 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		385FC2D1219E839600304657 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385FC317219E8A9D00304657 /* AgoraSignal.m in Sources */,
+				385FC2E8219E839800304657 /* main.m in Sources */,
+				385FC32F219EC5F800304657 /* ChatRoomViewController.m in Sources */,
+				385FC326219EAFCE00304657 /* ChatViewController.m in Sources */,
+				385FC335219EDF4700304657 /* MainViewController.m in Sources */,
+				385FC33821A0154800304657 /* ChannelRoomViewController.m in Sources */,
+				385FC31A219E98D900304657 /* LeftCell.m in Sources */,
+				385FC314219E884400304657 /* Message.m in Sources */,
+				385FC332219EDCC400304657 /* ChannelViewController.m in Sources */,
+				385FC323219EAF2E00304657 /* UIColor+Extension.m in Sources */,
+				385FC311219E863E00304657 /* KeyCenter.m in Sources */,
+				385FC320219EA90200304657 /* LogWriter.m in Sources */,
+				385FC31D219E9A9B00304657 /* RightCell.m in Sources */,
+				385FC2DA219E839600304657 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		385FC2DE219E839600304657 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				385FC2DF219E839600304657 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		385FC2E3219E839800304657 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				385FC2E4219E839800304657 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		385FC2E9219E839800304657 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		385FC2EA219E839800304657 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		385FC2EC219E839800304657 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48TB6ZZL5S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				INFOPLIST_FILE = "Agora-Signaling-Tutorial/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.agora.Agora-Signaling-Tutorial-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		385FC2ED219E839800304657 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48TB6ZZL5S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				INFOPLIST_FILE = "Agora-Signaling-Tutorial/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.agora.Agora-Signaling-Tutorial-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		385FC2D0219E839600304657 /* Build configuration list for PBXProject "Agora-Signaling-Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385FC2E9219E839800304657 /* Debug */,
+				385FC2EA219E839800304657 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		385FC2EB219E839800304657 /* Build configuration list for PBXNativeTarget "Agora-Signaling-Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385FC2EC219E839800304657 /* Debug */,
+				385FC2ED219E839800304657 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 385FC2CD219E839600304657 /* Project object */;
+}
