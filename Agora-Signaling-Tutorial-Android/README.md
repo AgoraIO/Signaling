@@ -51,7 +51,7 @@ To build and run the sample project, first obtain an app ID:
 
 3. Open `app\build.gradle` in a text editor, add `compile fileTree(dir: 'libs', include: ['*.jar'])` to the `dependencies` section, and save the file:
 
-``` json
+```
 dependencies {
     ...
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -145,6 +145,7 @@ The sample project contains the following `Activity` classes:
 `LoginActivity` provides a user interface for the user to log in to Agora. Its layout is defined in `\layout\activity_login.xml`.
 
 The main aspects of this layout are shown here:
+
 ![ActivityLogin.png](./images/ActivityLogin.png)
 
 |Component                        |Description                                                                                                                                 |
