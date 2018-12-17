@@ -159,6 +159,7 @@ The main aspects of this layout are shown here:
 `SelectChannelActivity` provides a user interface for the user to select either *point-to-point messaging* or *channel messaging*. Its layout is defined in `\layout\activity_message.xml`.
 
 The main aspects of this layout are shown here:
+
 ![ActivitySelectChannel.png](./images/ActivitySelectChannel.png)
 
 |Component                        |Description                                                                                                                                 |
@@ -173,6 +174,7 @@ The main aspects of this layout are shown here:
 `MessageActivity` provides a user interface for the user to enter, receive, and view messages. Its layout is defined in `\layout\activity_message.xml`.
 
 The main aspects of this layout are shown here:
+
 ![ActivityMessage.png](./images/ActivityMessage.png)
 
 |Component                        |Description                                                                                                                                 |
