@@ -1,6 +1,6 @@
 # Agora Android Signaling Tutorial
 
-*其他语言版本： [简体中文](README.zh.md)*
+*Read this in other languages: [Chinese](README.zh.md)*
 
 The Agora Android Signaling Tutorial is an open-source demo that will help you integrate message chat directly into your Android applications using the Agora Signaling SDK.
 
