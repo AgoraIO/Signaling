@@ -1,6 +1,7 @@
 
 # Agora Signaling Tutorial (iOS Swift)
 
+*Read this in other languages: [Chinese](README.zh.md)*
 
 This tutorial enables you to quickly get started with using a sample chat application to develop requests to the Agora Signaling SDK.
 
