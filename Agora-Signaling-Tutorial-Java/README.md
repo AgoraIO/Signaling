@@ -10,7 +10,7 @@ The following features are included in this sample project:
 - Create a target account and log in
 - Select chat mode (1. Peer-to-peer private chat 2. Into the channel, multi-person chat group to chat)
 - Type in the account name or channel name of the other party (decided by the chat mode of the previous step)
-- Show private chat chat history
+- Show private chat history
 - Send channel message, receive channel message
 - Leave the chat group
 - Logout
